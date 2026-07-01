@@ -119,8 +119,8 @@ export const ORDER_STAGES: OrderStatus[] = [
   'Packed', 'Shipped', 'Out for Delivery', 'Delivered',
 ];
 
-export const ADMIN_EMAIL    = 'admin@kalii.com';
-export const ADMIN_PASSWORD = 'Kalii@2024';
+export const ADMIN_EMAIL    = 'adminP@kalii.com';
+export const ADMIN_PASSWORD = 'Kalii@2025';
 
 const STD  = ['S', 'M', 'L', 'XL', 'XXL'];
 const YOUTH = ['XS', 'S', 'M', 'L'];
