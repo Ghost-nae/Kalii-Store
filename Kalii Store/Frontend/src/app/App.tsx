@@ -91,15 +91,10 @@ useEffect(() => {
 
   // ── Auth ──────────────────────────────────────────────────────────────────
   const handleLogin = (user: User) => {
-  console.log("Logged in user:", user);
-  console.log("ADMIN_EMAIL:", ADMIN_EMAIL);
-  console.log("ADMIN_PASSWORD:", ADMIN_PASSWORD);
 
   const admin =
     user.email === ADMIN_EMAIL &&
     user.password === ADMIN_PASSWORD;
-
-  console.log("Is Admin?", admin);
 
   setIsAdmin(admin);
   setCurrentUser(user);
@@ -149,8 +144,7 @@ useEffect(() => {
   const selectedProduct = PRODUCTS.find(p => p.id === selectedProductId) ?? null;
   const cartCount   = cartItems.reduce((s, i) => s + i.quantity, 0);
   const wishlistCount = wishlist.length;
-  console.log("Current page:", page);
-  console.log("isAdmin:", isAdmin);
+ 
   
   return (
     <div style={{ backgroundColor: 'var(--background)', color: 'var(--foreground)', minHeight: '100vh' }} className="antialiased">
